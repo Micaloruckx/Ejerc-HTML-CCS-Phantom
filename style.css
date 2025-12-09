@@ -49,15 +49,15 @@ ul{
     height: 30px;
 }
 
-.header .header_nav-list{
+.header_nav-list{
     display: flex;
     flex-direction: row;
     background-color: #FDFCFE;
     border-radius: 90px;
     height: 60px;
-    width: 600px;
+    width: 610px;
     font-weight: 400;
-    padding: 5px;
+    padding: 7px;
 }
 
 .header_nav-list{
@@ -88,7 +88,7 @@ ul{
 .header__actions{
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 8px;
     align-items: center;
 }
 
