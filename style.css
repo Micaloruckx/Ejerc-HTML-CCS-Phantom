@@ -57,6 +57,7 @@ ul{
     height: 60px;
     width: 600px;
     font-weight: 400;
+    padding: 5px;
 }
 
 .header_nav-list{
@@ -65,7 +66,7 @@ ul{
 }
 
 .header_nav-item{
-    padding: 10px 23px;
+    padding: 12px 24px;
     font-weight: 600;
     display: flex;
     align-items: center;
@@ -80,9 +81,8 @@ ul{
 
 .header_nav-item:hover{
     background-color: #E2DFFE;
-    border-radius: 50px;
+    border-radius: 40px;
     cursor: pointer;
-    margin: 3px;
 }
 
 .header__actions{
