@@ -64,7 +64,7 @@ ul{
     background-color: #FDFCFE;
     border-radius: 90px;
     height: 60px;
-    width: 610px;
+    width: 620px;
     font-weight: 400;
     padding: 7px;
 }
@@ -103,6 +103,7 @@ ul{
     background-color: var(--color-primario-500);
     font-weight: 650;
     color: #3C315B;
+    height: 60px;
 }
 
 .btn-primary:hover{
