@@ -119,6 +119,7 @@ ul{
     height: 56px;
     font-size: 19px;
     border: none;
+    align-items: center;
 }
 
 .btn-list{
@@ -134,7 +135,7 @@ ul{
     
 }
 
-/*---1277px cambia nav por icon list---*/
+/*------1277px cambia nav por icon list------*/
 @media screen and (max-width: 1277px) {
     nav {
         display: none;
@@ -147,9 +148,11 @@ ul{
     }
 }
 
+/*------766px------*/
+
 @media screen and (max-width: 766px){
     .content-container{
-        min-width: none;
+        width: 100%;
     }
     .header_logo-container-largo{
         display: none;
@@ -165,7 +168,7 @@ ul{
         transform: scale(0.32);
         transform-origin: top left;
         padding: 0px;
-        margin-left: 20px;
+        margin-left: 2px;
         margin-top: 60px;
     }
     .header__actions{
@@ -173,8 +176,18 @@ ul{
     }
 }
 
+/*------<376px------*/
 
+@media screen and (width < 376px){
+    .header_logo-container-corto{
+        display: none;
+    }
 
-@media screen and (width > 270px){
-    
+    .header__actions{
+        display: flex;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        transform: translateX(50px) translateY(10px);
+    }
 }
