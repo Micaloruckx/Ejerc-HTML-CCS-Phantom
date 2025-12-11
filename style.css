@@ -33,6 +33,8 @@ ul{
     align-items: center;
     color: #3C315B;
     width: 1500px;
+    padding: 0;
+    margin: 0px;
 }
 
 .header{
@@ -44,9 +46,16 @@ ul{
     padding-right: 60px;
 }
 
-.header_logo-container{
-    width: 150px;
+.header_logo-container-largo{
+    display: flex;
+    width: 160px;
     height: 30px;
+    padding: 0px;
+}
+
+.header_logo-container-corto{
+    display: flex;
+    display: none;
 }
 
 .header_nav-list{
@@ -75,10 +84,6 @@ ul{
     font-weight: 650;
 }
 
-.bi{
-    display: flex;
-}
-
 .header_nav-item:hover{
     background-color: #E2DFFE;
     border-radius: 40px;
@@ -93,10 +98,11 @@ ul{
 }
 
 .btn-primary{
-    padding: 16px 32px;
+    padding: 20px 30px;
     border-radius: 100px;
     background-color: var(--color-primario-500);
     font-weight: 650;
+    color: #3C315B;
 }
 
 .btn-primary:hover{
@@ -105,6 +111,7 @@ ul{
 }
 
 .btn-secondary{
+    display: flex;
     padding: 19px;
     border-radius: 100px;
     background-color: var(--color-primario-50);
@@ -114,7 +121,60 @@ ul{
     border: none;
 }
 
+.btn-list{
+    display: none;
+}
+
 .btn-secondary:hover{
     background-color: var(--color-primario-150);
     cursor: pointer;
+}
+
+@media  and (max-width: 1554px) {
+    
+}
+
+/*---1277px cambia nav por icon list---*/
+@media screen and (max-width: 1277px) {
+    nav {
+        display: none;
+    }
+    .btn-list{
+        display:flex;
+    }
+    .btn-search{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 766px){
+    .content-container{
+        min-width: none;
+    }
+    .header_logo-container-largo{
+        display: none;
+    }
+    .header{
+        height: 9px;
+        margin-top: 9px;
+        padding: 30px;
+        min-width: 50px;
+    }
+    .header_logo-container-corto{
+        display: flex;
+        transform: scale(0.32);
+        transform-origin: top left;
+        padding: 0px;
+        margin-left: 20px;
+        margin-top: 60px;
+    }
+    .header__actions{
+        transform: scale(0.85) ;
+    }
+}
+
+
+
+@media screen and (width > 270px){
+    
 }
